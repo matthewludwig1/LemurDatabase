@@ -9,5 +9,5 @@ package lemurdatabase;
  * @author malud0519
  */
 public class JungleLemur extends Lemur{
-    // construct the Tree Lemur with its specific, or random attributes
+    // construct the Jungle Lemur with its specific, or random attributes
 }
