@@ -17,14 +17,11 @@ public class Lemur extends Mammal{
     */
     
     
-    
-    public Lemur() { // defualt constructor
+    // default constructor
+    public Lemur() {
 
     
     }
     
-    
-    
-   
   
 }
