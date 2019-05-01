@@ -15,13 +15,7 @@ public class Lemur extends Mammal{
        attributes of Lemurs. 
     
     */
-    
-    
-    // default constructor
-    public Lemur() {
-
-    
-    }
+    // a default is not necessary
     
   
 }
