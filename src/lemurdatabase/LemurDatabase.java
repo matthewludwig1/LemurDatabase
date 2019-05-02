@@ -19,28 +19,35 @@ public class LemurDatabase {
         int numLem, typeLem;
         numLem = Integer.parseInt(JOptionPane.showInputDialog("How many Lemurs do you want"
                 + " to add?"));
-        String lemurs[] = new String[numLem];   
+        String lemurs[] = new String[numLem]; // might need to output in order
         for (int i = 0; i < numLem; i++) {
             lemurs[i] = "";
             typeLem = Integer.parseInt(JOptionPane.showInputDialog("1-Tree Lemur" + "\n"
             + "2-Desert Lemur" + "\n" + "3-Jungle Lemur"));
             
             if (typeLem == 1) {
-                lemurs[i] += "Tree Lemur."; // could construct lemur here
-                //construct lemurs[i] : lemurs[i] = new TreeLemur();
+                lemurs[i] = new TreeLemur();  // will need to declare toString()
+                                              // inside of the lemur classes
+                System.out.println("Creating Tree Lemur");
             }
             
             else if (typeLem == 2) {
-                lemurs[i] += "Desert Lemur.";
+                lemurs[i] = new DesertLemur();
+                System.out.println("Creating Desert Lemur");
             }
             
             else if (typeLem == 3) {
-                lemurs[i] += "Jungle Lemur.";
+                lemurs[i] = new JungleLemur();
+                System.out.println("Creating Jungle Lemur");
             }
-            System.out.println("Creating ");
+            // lemurs[i].setAge(((int)(Math.random) * 18) + 1)
+            
         }
         System.out.println("Displaying the Lemurs:" + "\n" + "-------------------------------"
-                + "------" + "\n \n");
+                + "------" + "\n \n"); 
         
+        for (int j = 0; j < numLem; j++) {
+            System.out.println(lemurs[j].toString()); // prints lemur information
+        }
     }
 }
