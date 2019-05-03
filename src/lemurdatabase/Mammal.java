@@ -1,7 +1,7 @@
 /*
     Matt Ludwig
-    04-30-2019
-    This class holds the common attricbutes of various Mammals
+    05-03-2019
+    This class holds the common attributes of various Mammals
  */
 package lemurdatabase;
 
@@ -11,20 +11,20 @@ package lemurdatabase;
  */
     public class Mammal {
     private int itsAge;
-    private int itsWeight;
+    private double itsWeight;
     private String breed, gender;
   
 
-    public Mammal() {  // default
-        itsAge = 2;   
-        itsWeight = 5;  
+    public Mammal() { 
+        itsAge = (int) (Math.random() * 18) + 1;   
+        itsWeight = (Math.random() * 15) + 1;  
     }
 
     public int getAge() {
         return itsAge;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return itsWeight;
     }
 
@@ -52,4 +52,3 @@ package lemurdatabase;
         return gender;
     }
 }
-
