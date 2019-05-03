@@ -1,6 +1,6 @@
 /*
     Matt Ludwig
-    05-01-2019
+    05-03-2019
     This program allows the user to create different types of lemurs, using
  */
 package lemurdatabase;
@@ -47,7 +47,8 @@ public class LemurDatabase {
                 + "------" + "\n \n"); 
         
         for (int j = 0; j < numLem; j++) {
-            System.out.println(lemurs[j].toString()); // prints lemur information
+            System.out.println(lemurs[j].toString()); // prints lemur information 
+            // alt. use the getters and setters for the location
         }
     }
 }
